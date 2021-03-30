@@ -1,3 +1,24 @@
+const exam_00511777_value = require('./exam_00511777.json');
+const exam_00497957_value = require('./exam_00497957.json');
+const exam_00476060_value = require('./exam_00476060.json');
+const exam_00476032_value = require('./exam_00476032.json');
+
+const codpaciente_7454041 = require('./codpaciente_7454041.json');
+const codpaciente_7454063 = require('./codpaciente_7454063.json');
+const codpaciente_7465028 = require('./codpaciente_7465028.json');
+const codpaciente_7470142 = require('./codpaciente_7470142.json');
+
+const paciente_id_150708 = require('./paciente_id_150708.json');
+const paciente_id_150757 = require('./paciente_id_150757.json');
+const paciente_id_196062 = require('./paciente_id_196062.json');
+const paciente_id_207187 = require('./paciente_id_207187.json');
+
+const medico_150255 = require('./medico_150255.json');
+const medico_150341 = require('./medico_150341.json');
+const medico_150253 = require('./medico_150253.json');
+const medico_150386 = require('./medico_150386.json');
+const medico_207188 = require('./medico_207188.json');
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -10,433 +31,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 //CORS
 app.use(cors());
-
-const exam_00511777_value =
-{
-    "recordsets": [
-        [
-            {
-                "id": "0051177703311327856",
-                "CodAmbulatorio": "00511777",
-                "IDAtendimento": 568364,
-                "IDItem": 3411,
-                "DataAtendimento": "2020-04-14 13:00:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150253,
-                "IDMedicoIndica": 207188,
-                "IDPaciente": 207187,
-                "Empresa": "Med Exames",
-                "CodItem": "03311",
-                "Item": "ECO COLOR DOPPLER CARDIACO",
-                "IDItemMovimento": 327856,
-                "IDItemGrupo": 120,
-                "CodItemGrupo": "08",
-                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-                "IDPessoa": 207187,
-                "CodPessoa": "000194071",
-                "Pessoa": "Marilda Flores Silva",
-                "Sexo": "F",
-                "Nascimento": "1948-04-30T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7470142",
-                "UsuarioWeb": "7470142",
-                "SenhaWeb": "64077835"
-            }
-        ]
-    ],
-    "recordset": [
-        {
-            "id": "0051177703311327856",
-            "CodAmbulatorio": "00511777",
-            "IDAtendimento": 568364,
-            "IDItem": 3411,
-            "DataAtendimento": "2020-04-14 13:00:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150253,
-            "IDMedicoIndica": 207188,
-            "IDPaciente": 207187,
-            "Empresa": "Med Exames",
-            "CodItem": "03311",
-            "Item": "ECO COLOR DOPPLER CARDIACO",
-            "IDItemMovimento": 327856,
-            "IDItemGrupo": 120,
-            "CodItemGrupo": "08",
-            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-            "IDPessoa": 207187,
-            "CodPessoa": "000194071",
-            "Pessoa": "Marilda Flores Silva",
-            "Sexo": "F",
-            "Nascimento": "1948-04-30T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7470142",
-            "UsuarioWeb": "7470142",
-            "SenhaWeb": "64077835"
-        }
-    ],
-    "output": {},
-    "rowsAffected": []
-}
-
-const exam_00497957_value = 
-{
-    "recordsets": [
-        [
-            {
-                "id": "0049795710495305394",
-                "CodAmbulatorio": "00497957",
-                "IDAtendimento": 549826,
-                "IDItem": 10604,
-                "DataAtendimento": "2018-08-24 10:26:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150253,
-                "IDMedicoIndica": 150386,
-                "IDPaciente": 196062,
-                "Empresa": "Med Exames",
-                "CodItem": "10495",
-                "Item": "Doppler Venoso Superficial e Profundo ",
-                "IDItemMovimento": 305394,
-                "IDItemGrupo": 133,
-                "CodItemGrupo": "21",
-                "ItemGrupo": "ULTRA-SONOGRAFIA",
-                "IDPessoa": 196062,
-                "CodPessoa": "000183941",
-                "Pessoa": "Jailda Cunha Vargas do Canto",
-                "Sexo": "F",
-                "Nascimento": "1954-03-09T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7465028",
-                "UsuarioWeb": "7465028",
-                "SenhaWeb": "48934940"
-            },
-            {
-                "id": "0049795710495305395",
-                "CodAmbulatorio": "00497957",
-                "IDAtendimento": 549826,
-                "IDItem": 10604,
-                "DataAtendimento": "2018-08-24 10:26:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150253,
-                "IDMedicoIndica": 150386,
-                "IDPaciente": 196062,
-                "Empresa": "Med Exames",
-                "CodItem": "10495",
-                "Item": "Doppler Venoso Superficial e Profundo ",
-                "IDItemMovimento": 305395,
-                "IDItemGrupo": 133,
-                "CodItemGrupo": "21",
-                "ItemGrupo": "ULTRA-SONOGRAFIA",
-                "IDPessoa": 196062,
-                "CodPessoa": "000183941",
-                "Pessoa": "Jailda Cunha Vargas do Canto",
-                "Sexo": "F",
-                "Nascimento": "1954-03-09T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7465028",
-                "UsuarioWeb": "7465028",
-                "SenhaWeb": "48934940"
-            }
-        ]
-    ],
-    "recordset": [
-        {
-            "id": "0049795710495305394",
-            "CodAmbulatorio": "00497957",
-            "IDAtendimento": 549826,
-            "IDItem": 10604,
-            "DataAtendimento": "2018-08-24 10:26:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150253,
-            "IDMedicoIndica": 150386,
-            "IDPaciente": 196062,
-            "Empresa": "Med Exames",
-            "CodItem": "10495",
-            "Item": "Doppler Venoso Superficial e Profundo ",
-            "IDItemMovimento": 305394,
-            "IDItemGrupo": 133,
-            "CodItemGrupo": "21",
-            "ItemGrupo": "ULTRA-SONOGRAFIA",
-            "IDPessoa": 196062,
-            "CodPessoa": "000183941",
-            "Pessoa": "Jailda Cunha Vargas do Canto",
-            "Sexo": "F",
-            "Nascimento": "1954-03-09T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7465028",
-            "UsuarioWeb": "7465028",
-            "SenhaWeb": "48934940"
-        },
-        {
-            "id": "0049795710495305395",
-            "CodAmbulatorio": "00497957",
-            "IDAtendimento": 549826,
-            "IDItem": 10604,
-            "DataAtendimento": "2018-08-24 10:26:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150253,
-            "IDMedicoIndica": 150386,
-            "IDPaciente": 196062,
-            "Empresa": "Med Exames",
-            "CodItem": "10495",
-            "Item": "Doppler Venoso Superficial e Profundo ",
-            "IDItemMovimento": 305395,
-            "IDItemGrupo": 133,
-            "CodItemGrupo": "21",
-            "ItemGrupo": "ULTRA-SONOGRAFIA",
-            "IDPessoa": 196062,
-            "CodPessoa": "000183941",
-            "Pessoa": "Jailda Cunha Vargas do Canto",
-            "Sexo": "F",
-            "Nascimento": "1954-03-09T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7465028",
-            "UsuarioWeb": "7465028",
-            "SenhaWeb": "48934940"
-        }
-    ],
-    "output": {},
-    "rowsAffected": []
-}
-
-exam_00476060_value =
-{
-    "recordsets": [
-        [
-            {
-                "id": "0047606003310246563",
-                "CodAmbulatorio": "00476060",
-                "IDAtendimento": 497565,
-                "IDItem": 3410,
-                "DataAtendimento": "2016-01-18 09:10:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150255,
-                "IDMedicoIndica": 150341,
-                "IDPaciente": 150757,
-                "Empresa": "Med Exames",
-                "CodItem": "03310",
-                "Item": "ECODOPPLERCARDIOGRAMA TRANSTORACICO",
-                "IDItemMovimento": 246563,
-                "IDItemGrupo": 120,
-                "CodItemGrupo": "08",
-                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-                "IDPessoa": 150757,
-                "CodPessoa": "000150651",
-                "Pessoa": "Albino Angelico Boquinhas Ladino",
-                "Sexo": "M",
-                "Nascimento": "1945-11-24T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7454063",
-                "UsuarioWeb": "7454063",
-                "SenhaWeb": "14272971"
-            },
-            {
-                "id": "0047606010497246564",
-                "CodAmbulatorio": "00476060",
-                "IDAtendimento": 497565,
-                "IDItem": 10606,
-                "DataAtendimento": "2016-01-18 09:10:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150255,
-                "IDMedicoIndica": 150341,
-                "IDPaciente": 150757,
-                "Empresa": "Med Exames",
-                "CodItem": "10497",
-                "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS E VERTEBRAIS",
-                "IDItemMovimento": 246564,
-                "IDItemGrupo": 120,
-                "CodItemGrupo": "08",
-                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-                "IDPessoa": 150757,
-                "CodPessoa": "000150651",
-                "Pessoa": "Albino Angelico Boquinhas Ladino",
-                "Sexo": "M",
-                "Nascimento": "1945-11-24T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7454063",
-                "UsuarioWeb": "7454063",
-                "SenhaWeb": "14272971"
-            }
-        ]
-    ],
-    "recordset": [
-        {
-            "id": "0047606003310246563",
-            "CodAmbulatorio": "00476060",
-            "IDAtendimento": 497565,
-            "IDItem": 3410,
-            "DataAtendimento": "2016-01-18 09:10:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150255,
-            "IDMedicoIndica": 150341,
-            "IDPaciente": 150757,
-            "Empresa": "Med Exames",
-            "CodItem": "03310",
-            "Item": "ECODOPPLERCARDIOGRAMA TRANSTORACICO",
-            "IDItemMovimento": 246563,
-            "IDItemGrupo": 120,
-            "CodItemGrupo": "08",
-            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-            "IDPessoa": 150757,
-            "CodPessoa": "000150651",
-            "Pessoa": "Albino Angelico Boquinhas Ladino",
-            "Sexo": "M",
-            "Nascimento": "1945-11-24T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7454063",
-            "UsuarioWeb": "7454063",
-            "SenhaWeb": "14272971"
-        },
-        {
-            "id": "0047606010497246564",
-            "CodAmbulatorio": "00476060",
-            "IDAtendimento": 497565,
-            "IDItem": 10606,
-            "DataAtendimento": "2016-01-18 09:10:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150255,
-            "IDMedicoIndica": 150341,
-            "IDPaciente": 150757,
-            "Empresa": "Med Exames",
-            "CodItem": "10497",
-            "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS E VERTEBRAIS",
-            "IDItemMovimento": 246564,
-            "IDItemGrupo": 120,
-            "CodItemGrupo": "08",
-            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-            "IDPessoa": 150757,
-            "CodPessoa": "000150651",
-            "Pessoa": "Albino Angelico Boquinhas Ladino",
-            "Sexo": "M",
-            "Nascimento": "1945-11-24T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7454063",
-            "UsuarioWeb": "7454063",
-            "SenhaWeb": "14272971"
-        }
-    ],
-    "output": {},
-    "rowsAffected": []
-}
-
-const exam_00476032_value = 
-{
-    "recordsets": [
-        [
-            {
-                "id": "0047603203310246515",
-                "CodAmbulatorio": "00476032",
-                "IDAtendimento": 497532,
-                "IDItem": 3410,
-                "DataAtendimento": "2016-01-13 09:25:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150255,
-                "IDMedicoIndica": 150341,
-                "IDPaciente": 150708,
-                "Empresa": "Med Exames",
-                "CodItem": "03310",
-                "Item": "ECODOPPLERCARDIOGRAMA TRANSTORACICO",
-                "IDItemMovimento": 246515,
-                "IDItemGrupo": 120,
-                "CodItemGrupo": "08",
-                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-                "IDPessoa": 150708,
-                "CodPessoa": "000150578",
-                "Pessoa": "Patricia Faria Venturini",
-                "Sexo": "F",
-                "Nascimento": "1978-01-31T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7454041",
-                "UsuarioWeb": "7454041",
-                "SenhaWeb": "28548573"
-            },
-            {
-                "id": "0047603203313246516",
-                "CodAmbulatorio": "00476032",
-                "IDAtendimento": 497532,
-                "IDItem": 3413,
-                "DataAtendimento": "2016-01-13 09:25:00",
-                "CodEmpresa": "0001",
-                "IDMedico": 150255,
-                "IDMedicoIndica": 150341,
-                "IDPaciente": 150708,
-                "Empresa": "Med Exames",
-                "CodItem": "03313",
-                "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS ",
-                "IDItemMovimento": 246516,
-                "IDItemGrupo": 120,
-                "CodItemGrupo": "08",
-                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-                "IDPessoa": 150708,
-                "CodPessoa": "000150578",
-                "Pessoa": "Patricia Faria Venturini",
-                "Sexo": "F",
-                "Nascimento": "1978-01-31T00:00:00.000Z",
-                "Desativado": 0,
-                "CodPaciente": "7454041",
-                "UsuarioWeb": "7454041",
-                "SenhaWeb": "28548573"
-            }
-        ]
-    ],
-    "recordset": [
-        {
-            "id": "0047603203310246515",
-            "CodAmbulatorio": "00476032",
-            "IDAtendimento": 497532,
-            "IDItem": 3410,
-            "DataAtendimento": "2016-01-13 09:25:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150255,
-            "IDMedicoIndica": 150341,
-            "IDPaciente": 150708,
-            "Empresa": "Med Exames",
-            "CodItem": "03310",
-            "Item": "ECODOPPLERCARDIOGRAMA TRANSTORACICO",
-            "IDItemMovimento": 246515,
-            "IDItemGrupo": 120,
-            "CodItemGrupo": "08",
-            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-            "IDPessoa": 150708,
-            "CodPessoa": "000150578",
-            "Pessoa": "Patricia Faria Venturini",
-            "Sexo": "F",
-            "Nascimento": "1978-01-31T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7454041",
-            "UsuarioWeb": "7454041",
-            "SenhaWeb": "28548573"
-        },
-        {
-            "id": "0047603203313246516",
-            "CodAmbulatorio": "00476032",
-            "IDAtendimento": 497532,
-            "IDItem": 3413,
-            "DataAtendimento": "2016-01-13 09:25:00",
-            "CodEmpresa": "0001",
-            "IDMedico": 150255,
-            "IDMedicoIndica": 150341,
-            "IDPaciente": 150708,
-            "Empresa": "Med Exames",
-            "CodItem": "03313",
-            "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS ",
-            "IDItemMovimento": 246516,
-            "IDItemGrupo": 120,
-            "CodItemGrupo": "08",
-            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
-            "IDPessoa": 150708,
-            "CodPessoa": "000150578",
-            "Pessoa": "Patricia Faria Venturini",
-            "Sexo": "F",
-            "Nascimento": "1978-01-31T00:00:00.000Z",
-            "Desativado": 0,
-            "CodPaciente": "7454041",
-            "UsuarioWeb": "7454041",
-            "SenhaWeb": "28548573"
-        }
-    ],
-    "output": {},
-    "rowsAffected": []
-}
-
 
 // defining routes
 const router = express.Router();
@@ -460,8 +54,23 @@ router.get('/pacientes/:codPaciente', (req, res) => {
     if (!req.params.codPaciente) {
         res="Parameter required";
     } else {
-      res.json({ msg: "codPaciente:" + req.params.codPaciente }); 
-    }    
+			switch(req.params.codPaciente) {
+				case "7454041":
+					res.send(codpaciente_7454041);
+					break;
+				case "7454063":
+					res.send(codpaciente_7454063);
+					break;
+				case "7465028":
+					res.send(codpaciente_7465028);
+					break;
+				case "7470142":
+					res.send(codpaciente_7470142);
+					break;
+				default:
+					res.status(404).send("codPaciente not found");
+    }  
+	}		
 });
 
 // find Paciente by ID
@@ -470,8 +79,23 @@ router.get('/pacientes/id/:idPaciente', (req, res) => {
     if (!req.params.idPaciente) {
         res="Parameter required";
     } else {
-      res="idPaciente all";
-    }    
+      switch(req.params.idPaciente) {
+				case "150708":
+					res.send(paciente_id_150708);
+					break;
+				case "150757":
+					res.send(paciente_id_150757);
+					break;
+				case "196062":
+					res.send(paciente_id_196062);
+					break;
+				case "207187":
+					res.send(paciente_id_207187);
+					break;
+				default:
+					res.status(404).send("Medico not found");
+    } 
+	}
 });
 
 
@@ -501,7 +125,7 @@ router.get('/exams/:id', (req, res) => {
     if (!req.params.id) {
         res="Parameter variable required";
     } else {
-			console.log(req.params.id);
+			//console.log(req.params.id);
 			switch(req.params.id) {
 				case "00511777":
 					res.send(exam_00511777_value);
@@ -518,7 +142,7 @@ router.get('/exams/:id', (req, res) => {
 				default:
 					res.status(404).send("Exam not found");
 			}      
-    }    
+    } 
 });
 
 // Laudo - get Exam data by ID, Item AND ItemMov
@@ -538,8 +162,26 @@ router.get('/medicos/:id', (req, res) => {
     if (!req.params.id) {
         res="Parameter required";
     } else {
-      res="medicos all"
+      switch(req.params.id) {
+				case "150255":
+					res.send(medico_150255);
+					break;
+				case "150341":
+					res.send(medico_150341);
+					break;					
+				case "150253":
+					res.send(medico_150253);
+					break;					
+				case "150386":
+					res.send(medico_150386);
+					break;					
+				case "207188":
+					res.send(medico_207188);
+					break;					
+				default:
+					res.status(404).send("Medico not found");
     }    
+	}
 });
 
 // Laudo - get Exam data by one date

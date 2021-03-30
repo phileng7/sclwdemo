@@ -1,0 +1,32 @@
+{
+    "recordsets": [
+        [
+            {
+                "IDMedico": 150386,
+                "CodMedico": "02929",
+                "Apelido": "Nelson Vieira",
+                "CodPessoa": "000150065",
+                "Pessoa": "Nelson Vieira",
+                "Sexo": "M",
+                "CRM": "52.25617-0",
+                "UsuarioWeb": "02928",
+                "SenhaWeb": "68276399"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "IDMedico": 150386,
+            "CodMedico": "02929",
+            "Apelido": "Nelson Vieira",
+            "CodPessoa": "000150065",
+            "Pessoa": "Nelson Vieira",
+            "Sexo": "M",
+            "CRM": "52.25617-0",
+            "UsuarioWeb": "02928",
+            "SenhaWeb": "68276399"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}

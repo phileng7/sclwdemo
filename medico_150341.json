@@ -1,0 +1,32 @@
+{
+    "recordsets": [
+        [
+            {
+                "IDMedico": 150341,
+                "CodMedico": "02915",
+                "Apelido": "Sergio Luiz Carvalho",
+                "CodPessoa": "000149987",
+                "Pessoa": "Sergio Luiz Carvalho Manhaes",
+                "Sexo": "M",
+                "CRM": "52.25128-9",
+                "UsuarioWeb": "02914",
+                "SenhaWeb": "63508414"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "IDMedico": 150341,
+            "CodMedico": "02915",
+            "Apelido": "Sergio Luiz Carvalho",
+            "CodPessoa": "000149987",
+            "Pessoa": "Sergio Luiz Carvalho Manhaes",
+            "Sexo": "M",
+            "CRM": "52.25128-9",
+            "UsuarioWeb": "02914",
+            "SenhaWeb": "63508414"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}

@@ -1,0 +1,32 @@
+{
+    "recordsets": [
+        [
+            {
+                "IDMedico": 150255,
+                "CodMedico": "02871",
+                "Apelido": "Washington Barbosa d",
+                "CodPessoa": "000149847",
+                "Pessoa": "Washington Barbosa de Araujo",
+                "Sexo": "M",
+                "CRM": "52.33574-4",
+                "UsuarioWeb": "02870",
+                "SenhaWeb": "45386613"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "IDMedico": 150255,
+            "CodMedico": "02871",
+            "Apelido": "Washington Barbosa d",
+            "CodPessoa": "000149847",
+            "Pessoa": "Washington Barbosa de Araujo",
+            "Sexo": "M",
+            "CRM": "52.33574-4",
+            "UsuarioWeb": "02870",
+            "SenhaWeb": "45386613"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}

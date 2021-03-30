@@ -1,0 +1,64 @@
+{
+    "recordsets": [
+        [
+            {
+                "id": "0051177703311327856",
+                "CodAmbulatorio": "00511777",
+                "IDAtendimento": 568364,
+                "IDItem": 3411,
+                "DataAtendimento": "2020-04-14 13:00:00",
+                "CodEmpresa": "0001",
+                "IDMedico": 150253,
+                "IDMedicoIndica": 207188,
+                "IDPaciente": 207187,
+                "Empresa": "Med Exames",
+                "CodItem": "03311",
+                "Item": "ECO COLOR DOPPLER CARDIACO",
+                "IDItemMovimento": 327856,
+                "IDItemGrupo": 120,
+                "CodItemGrupo": "08",
+                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
+                "IDPessoa": 207187,
+                "CodPessoa": "000194071",
+                "Pessoa": "Marilda Flores Silva",
+                "Sexo": "F",
+                "Nascimento": "1948-04-30T00:00:00.000Z",
+                "Desativado": 0,
+                "CodPaciente": "7470142",
+                "UsuarioWeb": "7470142",
+                "SenhaWeb": "64077835"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "id": "0051177703311327856",
+            "CodAmbulatorio": "00511777",
+            "IDAtendimento": 568364,
+            "IDItem": 3411,
+            "DataAtendimento": "2020-04-14 13:00:00",
+            "CodEmpresa": "0001",
+            "IDMedico": 150253,
+            "IDMedicoIndica": 207188,
+            "IDPaciente": 207187,
+            "Empresa": "Med Exames",
+            "CodItem": "03311",
+            "Item": "ECO COLOR DOPPLER CARDIACO",
+            "IDItemMovimento": 327856,
+            "IDItemGrupo": 120,
+            "CodItemGrupo": "08",
+            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
+            "IDPessoa": 207187,
+            "CodPessoa": "000194071",
+            "Pessoa": "Marilda Flores Silva",
+            "Sexo": "F",
+            "Nascimento": "1948-04-30T00:00:00.000Z",
+            "Desativado": 0,
+            "CodPaciente": "7470142",
+            "UsuarioWeb": "7470142",
+            "SenhaWeb": "64077835"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}

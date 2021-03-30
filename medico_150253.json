@@ -1,0 +1,32 @@
+{
+    "recordsets": [
+        [
+            {
+                "IDMedico": 150253,
+                "CodMedico": "02868",
+                "Apelido": "Laila Abi - Chaiben",
+                "CodPessoa": "000149844",
+                "Pessoa": "Laila Abi - Chaiben",
+                "Sexo": "F",
+                "CRM": "52.42470-6",
+                "UsuarioWeb": "02867",
+                "SenhaWeb": "14348518"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "IDMedico": 150253,
+            "CodMedico": "02868",
+            "Apelido": "Laila Abi - Chaiben",
+            "CodPessoa": "000149844",
+            "Pessoa": "Laila Abi - Chaiben",
+            "Sexo": "F",
+            "CRM": "52.42470-6",
+            "UsuarioWeb": "02867",
+            "SenhaWeb": "14348518"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}
