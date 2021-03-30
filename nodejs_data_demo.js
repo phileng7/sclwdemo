@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 3000;
+//const port = 3000;
+const port = process.env.PORT || 4000
 
 // body-parser configuration
 app.use(bodyParser.urlencoded({ extended: true }));
