@@ -1,0 +1,27 @@
+{
+  "name": "sclwdemo",
+  "version": "1.0.0",
+  "description": "\"# sclwdemo\"",
+  "main": "nodejs_data_demo.js",
+  "scripts": {
+		"start": "node nodejs_data_demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phileng7/sclwdemo.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "FM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phileng7/sclwdemo/issues"
+  },
+  "homepage": "https://github.com/phileng7/sclwdemo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
