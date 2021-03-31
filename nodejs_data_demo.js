@@ -19,6 +19,16 @@ const medico_150253 = require('./medico_150253.json');
 const medico_150386 = require('./medico_150386.json');
 const medico_207188 = require('./medico_207188.json');
 
+//get Exam data by CodAmbulatorio, CodItem, IDItemMovimento
+const exam_00476032_1 = require('./exam_00476032_1.json');
+const exam_00476032_2 = require('./exam_00476032_2.json');
+const exam_00476060_1 = require('./exam_00476060_1.json');
+const exam_00476060_2 = require('./exam_00476060_2.json');
+const exam_00497957_1 = require('./exam_00497957_1.json');
+const exam_00497957_2 = require('./exam_00497957_2.json');
+const exam_00511777_1 = require('./exam_00511777_1.json');
+
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -145,14 +155,29 @@ router.get('/exams/:id', (req, res) => {
     } 
 });
 
-// Laudo - get Exam data by ID, Item AND ItemMov
+// Laudo - get Exam data by CodAmbulatorio, CodItem, IDItemMovimento
 router.get('/exams/:id/:item/:movItem', (req, res) => {
     let query = '';
     if (!req.params.id || !req.params.item || !req.params.movItem) {
         res="Parameter variable required";
     } else {
-      res="exams movItem all"
-    }    
+			if(req.params.id==="00476032" && req.params.item==="03310" && req.params.movItem==="246515")
+				res.send(exam_00476032_1);
+			else if(req.params.id==="00476032" && req.params.item==="03313" && req.params.movItem==="246515")
+				res.send(exam_00476032_2);
+			else if(req.params.id==="00476060" && req.params.item==="03310" && req.params.movItem==="246563")
+				res.send(exam_00476060_1);
+			else if(req.params.id==="00476060" && req.params.item==="10497" && req.params.movItem==="246564")
+				res.send(exam_00476060_2);
+			else if(req.params.id==="00497957" && req.params.item==="10495" && req.params.movItem==="305394")
+				res.send(exam_00497957_1);
+			else if(req.params.id==="00497957" && req.params.item==="10495" && req.params.movItem==="305395")
+				res.send(exam_00497957_2);
+			else if(req.params.id==="00511777" && req.params.item==="03311" && req.params.movItem==="327856")
+				res.send(exam_00511777_1);
+			else
+				res.status(404).send("Exam not found");
+    } 
 });
 
 
@@ -184,14 +209,29 @@ router.get('/medicos/:id', (req, res) => {
 	}
 });
 
-// Laudo - get Exam data by one date
+// Laudo - get Exam data by one date (yyyymmdd)
 router.get('/examsdate/:startDate', (req, res) => {
     let query = '';
     if (!req.params.startDate) {
         res="Parameter path variable required";
     } else {
-      res="startDate all";
-    }    
+      switch(req.params.startDate) {
+				case "20160113":
+					res.send(exam_00476032_value);
+					break;
+				case "20160118":
+					res.send(exam_00476060_value);
+					break;
+				case "20180824":
+					res.send(exam_00497957_value);
+					break;
+				case "20200414":
+					res.send(exam_00511777_value);
+					break;
+				default:
+					res.status(404).send("Data nao encontrada");
+    }
+	}    
 });
 
 // Laudo - get Exam data by range date
@@ -200,8 +240,23 @@ router.get('/examsdate/:startDate/:endDate', (req, res) => {
     if (!req.params.startDate) {
         res="Parameter path variable required";
     } else {
-      res="endDate all"
-    }    
+      switch(req.params.startDate) {
+				case "20160113":
+					res.send(exam_00476032_value);
+					break;
+				case "20160118":
+					res.send(exam_00476060_value);
+					break;
+				case "20180824":
+					res.send(exam_00497957_value);
+					break;
+				case "20200414":
+					res.send(exam_00511777_value);
+					break;
+				default:
+					res.status(404).send("Data nao encontrada");
+    }  
+	}		
 });
 
 

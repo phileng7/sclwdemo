@@ -1,0 +1,64 @@
+{
+    "recordsets": [
+        [
+            {
+                "id": "0047606010497246564",
+                "CodAmbulatorio": "00476060",
+                "IDAtendimento": 497565,
+                "IDItem": 10606,
+                "DataAtendimento": "2016-01-18 09:10:00",
+                "CodEmpresa": "0001",
+                "IDMedico": 150255,
+                "IDMedicoIndica": 150341,
+                "IDPaciente": 150757,
+                "Empresa": "Med Exames",
+                "CodItem": "10497",
+                "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS E VERTEBRAIS",
+                "IDItemMovimento": 246564,
+                "IDItemGrupo": 120,
+                "CodItemGrupo": "08",
+                "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
+                "IDPessoa": 150757,
+                "CodPessoa": "000150651",
+                "Pessoa": "Albino Angelico Boquinhas Ladino",
+                "Sexo": "M",
+                "Nascimento": "1945-11-24T00:00:00.000Z",
+                "Desativado": 0,
+                "CodPaciente": "7454063",
+                "UsuarioWeb": "7454063",
+                "SenhaWeb": "14272971"
+            }
+        ]
+    ],
+    "recordset": [
+        {
+            "id": "0047606010497246564",
+            "CodAmbulatorio": "00476060",
+            "IDAtendimento": 497565,
+            "IDItem": 10606,
+            "DataAtendimento": "2016-01-18 09:10:00",
+            "CodEmpresa": "0001",
+            "IDMedico": 150255,
+            "IDMedicoIndica": 150341,
+            "IDPaciente": 150757,
+            "Empresa": "Med Exames",
+            "CodItem": "10497",
+            "Item": "ECO DOPPLER EM CORES DE CARÓTIDAS E VERTEBRAIS",
+            "IDItemMovimento": 246564,
+            "IDItemGrupo": 120,
+            "CodItemGrupo": "08",
+            "ItemGrupo": "CARDIOLOGIA - DIAGNOSE E TERAPIA",
+            "IDPessoa": 150757,
+            "CodPessoa": "000150651",
+            "Pessoa": "Albino Angelico Boquinhas Ladino",
+            "Sexo": "M",
+            "Nascimento": "1945-11-24T00:00:00.000Z",
+            "Desativado": 0,
+            "CodPaciente": "7454063",
+            "UsuarioWeb": "7454063",
+            "SenhaWeb": "14272971"
+        }
+    ],
+    "output": {},
+    "rowsAffected": []
+}
