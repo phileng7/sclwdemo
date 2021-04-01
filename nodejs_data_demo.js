@@ -1,32 +1,35 @@
-const exam_00511777_value = require('./exam_00511777.json');
-const exam_00497957_value = require('./exam_00497957.json');
-const exam_00476060_value = require('./exam_00476060.json');
-const exam_00476032_value = require('./exam_00476032.json');
+var fs = require('fs')
+const importFile = (filepath, encoding = "latin1") => JSON.parse(fs.readFileSync(filepath, { encoding }));
 
-const codpaciente_7454041 = require('./codpaciente_7454041.json');
-const codpaciente_7454063 = require('./codpaciente_7454063.json');
-const codpaciente_7465028 = require('./codpaciente_7465028.json');
-const codpaciente_7470142 = require('./codpaciente_7470142.json');
+const exam_00511777_value = importFile('./exam_00511777.json');
+const exam_00497957_value = importFile('./exam_00497957.json');
+const exam_00476060_value = importFile('./exam_00476060.json');
+const exam_00476032_value = importFile('./exam_00476032.json');
 
-const paciente_id_150708 = require('./paciente_id_150708.json');
-const paciente_id_150757 = require('./paciente_id_150757.json');
-const paciente_id_196062 = require('./paciente_id_196062.json');
-const paciente_id_207187 = require('./paciente_id_207187.json');
+const codpaciente_7454041 = importFile('./codpaciente_7454041.json');
+const codpaciente_7454063 = importFile('./codpaciente_7454063.json');
+const codpaciente_7465028 = importFile('./codpaciente_7465028.json');
+const codpaciente_7470142 = importFile('./codpaciente_7470142.json');
 
-const medico_150255 = require('./medico_150255.json');
-const medico_150341 = require('./medico_150341.json');
-const medico_150253 = require('./medico_150253.json');
-const medico_150386 = require('./medico_150386.json');
-const medico_207188 = require('./medico_207188.json');
+const paciente_id_150708 = importFile('./paciente_id_150708.json');
+const paciente_id_150757 = importFile('./paciente_id_150757.json');
+const paciente_id_196062 = importFile('./paciente_id_196062.json');
+const paciente_id_207187 = importFile('./paciente_id_207187.json');
+
+const medico_150255 = importFile('./medico_150255.json');
+const medico_150341 = importFile('./medico_150341.json');
+const medico_150253 = importFile('./medico_150253.json');
+const medico_150386 = importFile('./medico_150386.json');
+const medico_207188 = importFile('./medico_207188.json');
 
 //get Exam data by CodAmbulatorio, CodItem, IDItemMovimento
-const exam_00476032_1 = require('./exam_00476032_1.json');
-const exam_00476032_2 = require('./exam_00476032_2.json');
-const exam_00476060_1 = require('./exam_00476060_1.json');
-const exam_00476060_2 = require('./exam_00476060_2.json');
-const exam_00497957_1 = require('./exam_00497957_1.json');
-const exam_00497957_2 = require('./exam_00497957_2.json');
-const exam_00511777_1 = require('./exam_00511777_1.json');
+const exam_00476032_1 = importFile('./exam_00476032_1.json');
+const exam_00476032_2 = importFile('./exam_00476032_2.json');
+const exam_00476060_1 = importFile('./exam_00476060_1.json');
+const exam_00476060_2 = importFile('./exam_00476060_2.json');
+const exam_00497957_1 = importFile('./exam_00497957_1.json');
+const exam_00497957_2 = importFile('./exam_00497957_2.json');
+const exam_00511777_1 = importFile('./exam_00511777_1.json');
 
 
 const express = require('express');
@@ -59,7 +62,7 @@ router.get('/pacientes', (req, res) => {
 
 
 // find Paciente by Code
-router.get('/pacientes/:codPaciente', (req, res) => {
+router.get('/pacientes/:codPaciente', (req, res) => {		
     let query = '';
     if (!req.params.codPaciente) {
         res="Parameter required";
