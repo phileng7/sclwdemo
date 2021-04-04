@@ -4,7 +4,7 @@
             {
                 "CodPaciente": "7470142",
                 "CodPessoa": "000194071",
-                "Pessoa": "Marilda Flores Silva",
+                "Pessoa": "Maria Oliveira",
                 "Sexo": "F",
                 "CPF": "39130703700",
                 "Nascimento": "1948-04-30T00:00:00.000Z",
@@ -18,7 +18,7 @@
         {
             "CodPaciente": "7470142",
             "CodPessoa": "000194071",
-            "Pessoa": "Marilda Flores Silva",
+            "Pessoa": "Maria Oliveira",
             "Sexo": "F",
             "CPF": "39130703700",
             "Nascimento": "1948-04-30T00:00:00.000Z",
